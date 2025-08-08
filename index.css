@@ -1,0 +1,97 @@
+body {
+    background-color:#E6E6FA;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4rem;                   /* espaçamento (1 rem são 16 pixels) */
+}
+
+@font-face {
+    font-family:'hello';
+    src:url('fonts/Hello.otf');
+}
+
+h1 {
+    color:black;
+    font-family:hello;
+    font-size:4rem;
+}
+
+.conteudo {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+}
+
+.add-item {
+    display:flex;           /* input e botão ficam lado a lado */
+    align-items:center;     /* alinha no sentido vertical */
+    gap:1rem;
+    flex-wrap:wrap;         /* torna o site responsivo (se molda conforme o tamanho que abrir de navegador) */
+}
+
+#input-task {
+    flex:1;
+    padding:15px;
+    font-size:1rem;
+    outline:none;       /* retira uma linha de fora */
+}
+
+#botao-add {
+    border:1px solid #E6E6FA;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+
+#botao-add img {
+    width:25px;
+    height:25px;
+    margin:0;
+}
+
+#list-to-do {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    gap:1rem;
+    padding:0;
+}
+
+#list-to-do li {
+    list-style-type:none;
+    font-size:1.6rem;
+    text-transform:capitalize;      /* torna a primeira letra de cada palavra maiuscula */
+    display:flex;
+    justify-content:space-between;  /* organiza o item e o botão cada um em uma extremidade */
+    width:100%;
+    line-height:1.3rem;
+    font-family:calibri;
+    text-shadow:1px 1px 1px black;
+}
+
+#list-to-do li:hover {
+    transition:0.4s;
+    border-radius:1rem;
+    padding-left:1rem;
+}
+
+#check {
+    border:none;
+    font-size:1rem;
+    color:white;
+    background-color:#3CB371;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.4s;
+}
